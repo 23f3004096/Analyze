@@ -1,0 +1,1 @@
+import pandas as pd\n\ndef main():\n    # Load data from CSV file\n    df = pd.read_csv('data.csv')\n    # Perform some operations on the DataFrame\n    result = df.describe()\n    # Save the result to a JSON file\n    result.to_json('result.json')\n\nif __name__ == '__main__':\n    main()
